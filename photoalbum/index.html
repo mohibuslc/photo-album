@@ -3,72 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Photo-Album</title>
+
     <style>
-        .photo-frame .photo{
-            display:flex;
-            
-         
+        .album{
+
+      float: left;
+      flex-wrap: wrap;
+
+
+
 
         }
-        .photo-frame img{
+.photframe{
 
-            width: 100;
-            display: flex;
-            
+    width: 250px;
+    height:150px;
+    border: 2px solid red;
+    position: relative;
+    margin: 10px;
+  
 
-            }
-            .details{
-             top:0;
-               
-            width: 190px;
-            height: 290px;
-           position:absolute;
 
-            }
-            .photo-fram{
+}
+.photframe .photo img{
 
-                
-                margin:0 auto;
-                max-width: 1100px;
-            }
-            .photo-frame .photo:hover{
+width: 200px;
+    
+    }
+    .tigherdetails{
 
-                display:block;
-            }
-                
+            position: absolute;
+            width: 310px;
+        height:300px;
+        top:0;
+        display: none;
+        margin: 5px;
+        padding: 5px;
 
-            
 
-               
+    }
+     .photframe:hover .tigherdetails{
 
-       
+        display:block;
+        backgro
 
+    }
     </style>
+
 </head>
 <body>
-    <h1> Photo Album</h1>
-    <div class="photo-frame">
-        <div class="photo"><img src="img.jpg" alt=""></div>
-        <div class="photo"><img src="img.jpg" alt=""></div>
-        <div class="photo"><img src="img.jpg" alt=""></div>
-        
-        
+    <section class="album">
 
+            <div class="photframe">
+                <div class="photo">
+                    <img src="images/img.jpg" alt="">
+                
+                </div>
+                <div class ="tigherdetails"> 
+                    <h3> Royal Bangl Tiger</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laudantium corrupti quam et ullam incidunt. Sequi repellat deserunt, minima tempora odit cumque quis quaerat saepe in beatae harum aliquid rem.</p>
+
+
+
+                </div>
+            </div>
+    </section>
+    <section class="album">
+
+        <div class="photframe">
+            <div class="photo">
+                <img src="images/img.jpg" alt="">
+            
+            </div>
+            <div class ="tigherdetails"> 
+                <h3> Royal Bangl Tiger</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laudantium corrupti quam et ullam incidunt. Sequi repellat deserunt, minima tempora odit cumque quis quaerat saepe in beatae harum aliquid rem.</p>
+
+
+
+            </div>
+        </div>
+</section> 
+<section class="album">
+
+    <div class="photframe">
+        <div class="photo">
+            <img src="images/img.jpg" alt="">
         
+        </div>
+        <div class ="tigherdetails"> 
+            <h3> Royal Bangl Tiger</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, laudantium corrupti quam et ullam incidunt. Sequi repellat deserunt, minima tempora odit cumque quis quaerat saepe in beatae harum aliquid rem.</p>
 
 
-        <div class ="details">
-            <h1> About History Of Kangaro</h1>
-         
-            <p>
-                Kangaroos use their strong tails for balance while jumping.​ 
-                They are the tallest of all marsupials, standing over 6 feet (2 meters) tall.​​
-                Kangaroos live in Eastern Australia. They live in small groups called troops or herds 
-                (“mobs” by Australians), typically made up of 50 or more animals. If threatened, kangaroos pound the ground with their strong feet in
-            </p>
 
         </div>
     </div>
+</section>
+
+
+    
 </body>
 </html>
